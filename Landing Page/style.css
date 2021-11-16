@@ -1,0 +1,115 @@
+body{
+    font-family: sans-serif;
+}
+
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+h1{
+    color: aliceblue;
+    text-shadow: 3px 3px 3px rgba(136, 79, 79, 0.20);
+    padding-top: 150px;
+    font-size: medium;
+}
+.navbar{
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.tombol{
+    border-radius: 60px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.jumbotron{
+    margin-top: -100px;
+    padding-top: -15px;
+    background-image: url(asset/img/bg.jpg);
+    background-size: cover;
+    height: 420px;
+    position: relative;
+
+}
+
+
+.jumbotron .display-4 span{
+    font-weight: 600;
+}
+
+.h5{
+    font-size: 15pt;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+}
+
+.card{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.icon-hp{
+    width: 50%;
+}
+
+
+@media (min-width: 576px) {
+
+    .icon-hp{
+        width: 45%;
+    }
+
+
+
+    .card{
+        margin-top: 10px;
+    }
+
+    .h5{
+        font-size: 15pt ;
+        font-weight: lighter;   
+        color: rgb(0, 0, 0);
+    }
+
+    .navbar-brand{
+        text-transform: uppercase;
+    }
+    
+    .tombol{
+        text-transform: uppercase;
+        border-radius: 50px;
+    }
+
+
+
+    .jumbotron {
+        background-size: cover;
+        height: 620px;
+        position: relative;
+    }
+    .nav-link:hover::after{
+        content: '';
+        border-bottom: 3px solid blue;
+        display: block;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+}
